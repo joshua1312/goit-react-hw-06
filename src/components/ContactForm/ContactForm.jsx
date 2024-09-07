@@ -19,8 +19,8 @@ const ContactForm = () => {
             .required('Required'),
         number: Yup.string()
             .matches(
-                /^\d{3}-\d{2}-\d{2}$/,
-                'Phone number is not valid. Format should be 123-45-67',
+                /^\d{7}$/,
+                'Phone number is not valid.',
             )
             .required('Required'),
     });
