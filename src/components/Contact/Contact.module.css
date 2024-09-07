@@ -1,43 +1,39 @@
-.contact {
+.contactBox {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     border: 1px solid #000;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 6px;
-    background-color: #f3f3f3;
-    padding: 8px;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.contactInfo {
+.contactBoxWrapp {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 5px;
 }
 
 .contactText {
     display: flex;
-    align-items: center;
     gap: 8px;
+    align-items: center;
 }
 
-.contactDeleteButton {
-    border: 1px solid #747474;
-    background-color: #f1f1f1;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 4px;
-    padding: 6px 8px;
+.contactBtn {
+    display: block;
+    padding: 5px;
+    border: 1px solid #0000008f;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 250ms linear;
 }
 
-.contactDeleteButton:hover,
-.contactDeleteButton:focus-visible,
-.contactDeleteButton:active {
-    background-color: #dfdfdf;
+.contactBtn:hover,
+.contactBtn:active,
+.contactBtn:focus {
+    background-color: rgba(128, 128, 128, 0.435);
 }
 
-.contact:has(.contactDeleteBtn:hover,
-    .contactDeleteButton:focus-visible,
-    .contactDeleteButton:active) {
+.contactBox:has(.contactBtn:hover, .contactBtn:active, .contactBtn:focus) {
     border: 1px solid red;
 }
